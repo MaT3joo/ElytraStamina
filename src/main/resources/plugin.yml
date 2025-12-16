@@ -1,11 +1,18 @@
 name: ElytraStaminaPlugin
 main: dk.elera.elytrastamina.ElytraStaminaPlugin
-version: 1.0
+version: 1.4
 api-version: 1.20
 
 commands:
-   elytrastamina:
-      description: Sets the elytra stamina for a player
-      usage: /<command> <player> <amount>
-      permission: elytrastamina.set
-      
+  elytrastamina:
+    description: Elytra stamina plugin command
+    usage: /<command> <reload|player> [amount]
+    permission: elytrastamina.set
+
+permissions:
+  elytrastamina.set:
+    description: Allows you to set elytra stamina for players
+    default: op
+  elytrastamina.reload:
+    description: Allows you to reload the plugin configuration
+    default: op
